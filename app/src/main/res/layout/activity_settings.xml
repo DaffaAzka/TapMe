@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/settings_wallpaper"
+    tools:context=".SettingsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@color/navy_700">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="SETTINGS"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/settings_my_profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="22dp"
+            android:background="@drawable/oval_quest"
+            android:backgroundTint="@color/white">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_settings_my_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="21dp"
+            android:textColor="@color/gray_700"
+            android:text="My Profile"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settings_switch_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="22dp"
+            android:background="@drawable/oval_quest"
+            android:backgroundTint="@color/purple">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:background="@drawable/ic_pencil"
+                    android:backgroundTint="@color/white" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="21sp"
+            android:textColor="@color/purple"
+            android:text="Switch Button"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settings_information_layout"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="22dp"
+            android:background="@drawable/oval_quest"
+            android:backgroundTint="@color/navy_700">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:background="@drawable/ic_info"
+                    android:backgroundTint="@color/white" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="21sp"
+            android:textColor="@color/navy_700"
+            android:text="Information"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/settings_sign_out_layout"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="14dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="22dp"
+                android:background="@drawable/oval_quest"
+                android:backgroundTint="@color/red">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:background="@drawable/ic_logout"
+                        android:backgroundTint="@color/white" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Sign Out"
+                android:textColor="@color/red"
+                android:textSize="21sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

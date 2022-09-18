@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "951763099571",
+    "project_id": "tapme-2605",
+    "storage_bucket": "tapme-2605.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951763099571:android:feec0c90d230df1c6f35c6",
+        "android_client_info": {
+          "package_name": "com.dest.tapme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951763099571-kdm1qsvbr45i9clus1hn2ihvr7rvfu3v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTAhC_oiJbMp7_cQyMBIRdi_xQkwYzKVE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951763099571-kdm1qsvbr45i9clus1hn2ihvr7rvfu3v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

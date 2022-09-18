@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/select_buttons_wallpaper"
+    android:orientation="vertical"
+    tools:context=".SelectButtonActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Select your button!"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@color/navy_700"
+        android:fontFamily="@font/pacifico"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/select_button_one"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/body_card_select_button">
+
+                <ImageView
+                    android:layout_width="116dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_1" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/select_button_two"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:gravity="center"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/body_card_select_button">
+
+                <ImageView
+                    android:layout_width="116dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_2"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

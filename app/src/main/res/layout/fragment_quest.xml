@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_wallpaper"
+    tools:context=".fragments.QuestFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/navy_700"
+        android:fontFamily="@font/montserrat_bold"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:text="Quest"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="94dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/body_card_quest"
+                android:backgroundTint="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="12dp"
+                    android:background="@drawable/oval_quest"
+                    android:backgroundTint="@color/gold">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_crown"
+                        android:backgroundTint="@color/white"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginTop="55dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Be in first place"
+                        android:textSize="13sp" />
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:id="@+id/quest_progress_indicator_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:indicatorColor="@color/navy_700"
+                        app:trackCornerRadius="13dp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end">
+
+                <RelativeLayout
+                    android:id="@+id/quest_one_btn"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="74dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/oval_quest"
+                    android:backgroundTint="@color/gray_500">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_check_circle"
+                        android:backgroundTint="@color/white" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/quest_one_btn_clicked"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="74dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/oval_quest"
+                    android:backgroundTint="@color/navy_700"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_check_circle"
+                        android:backgroundTint="@color/white" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="220dp"
+                android:layout_height="36dp"
+                android:background="@drawable/header_card_quest"
+                android:backgroundTint="@color/gold">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="center"
+                    android:text="I AM KING"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/body_card_quest"
+                android:backgroundTint="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="12dp"
+                    android:background="@drawable/oval_quest"
+                    android:backgroundTint="@color/blue">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_diamond"
+                        android:backgroundTint="@color/white"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginTop="55dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Collect 15,000 points"
+                        android:textSize="13sp" />
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:id="@+id/quest_progress_indicator_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:indicatorColor="@color/navy_700"
+                        app:trackCornerRadius="13dp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end">
+
+                <RelativeLayout
+                    android:id="@+id/quest_two_btn"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="74dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/oval_quest"
+                    android:backgroundTint="@color/gray_500">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_check_circle"
+                        android:backgroundTint="@color/white" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/quest_two_btn_clicked"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="74dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/oval_quest"
+                    android:backgroundTint="@color/navy_700"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_check_circle"
+                        android:backgroundTint="@color/white" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="220dp"
+                android:layout_height="36dp"
+                android:background="@drawable/header_card_quest"
+                android:backgroundTint="@color/blue">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="center"
+                    android:text="I'M RICH"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

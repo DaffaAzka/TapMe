@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_wallpaper"
+    tools:context=".fragments.RankFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Rank"
+        android:textAlignment="center"
+        android:textColor="@color/navy_700"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="86dp"
+        android:layout_marginBottom="88dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_rank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="28dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/body_card_rank"
+            android:backgroundTint="@color/gray_700"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_rank_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginStart="68dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/tv_rank_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_marginEnd="58dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/oval_quest">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_rank_profile_picture"
+                android:layout_width="64dp"
+                android:layout_height="64dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <RelativeLayout
+                android:id="@+id/btn_rank_to_change_option"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/oval_quest"
+                android:backgroundTint="@color/navy_700">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_exchange"
+                    android:backgroundTint="@color/white" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rank_change_score_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_transparent"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="151dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/body_card_rank">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="130dp"
+                    android:layout_height="74dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/shape_home"
+                    android:backgroundTint="@color/navy_700"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="@string/point"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_rank_point"
+                        android:layout_width="110dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/white"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_rank_change"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/oval_quest"
+                    android:backgroundTint="@color/navy_700">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_exchange"
+                        android:backgroundTint="@color/white" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="130dp"
+                    android:layout_height="74dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/shape_home"
+                    android:backgroundTint="@color/gray_700"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="@string/score"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_rank_point_to_score"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="27sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
